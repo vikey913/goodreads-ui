@@ -1,5 +1,5 @@
 import { Component, OnInit, OnDestroy, ChangeDetectorRef } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import * as $ from 'jquery';
 import 'datatables.net';
 
@@ -9,16 +9,16 @@ import 'datatables.net';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit, OnDestroy {
-  clients: any[];
+  books: any[];
   dataTable: any;
 
   constructor(private httpClient: HttpClient, private chRef: ChangeDetectorRef) {
   }
 
   ngOnInit() {
-    this.httpClient.get('https://5a5a9e00bc6e340012a03796.mockapi.io/clients')
-      .subscribe((data: any[]) => {
-        this.clients = data;
+    this.httpClient.get('assets/data.json')
+      .subscribe((data: string) => {
+        this.books = data['GoodreadsResponse']['author']['books'];
         this.chRef.detectChanges();
         const table: any = $('table');
         this.dataTable = table.DataTable();
@@ -26,5 +26,7 @@ export class AppComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {}
+
+  isNumber(val) { console.log(val); return typeof val === 'number'; }
 
 }
