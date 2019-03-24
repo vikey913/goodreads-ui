@@ -285,6 +285,12 @@
     semver "^5.3.0"
     semver-intersect "^1.1.2"
 
+"@types/datatables.net@^1.10.17":
+  version "1.10.17"
+  resolved "https://nexus.ooflex.net/repository/npm/@types/datatables.net/-/datatables.net-1.10.17.tgz#41343c8c9d7c0844f5c2400a6e11eca51250a82f"
+  dependencies:
+    "@types/jquery" "*"
+
 "@types/jasmine@*":
   version "3.3.12"
   resolved "https://nexus.ooflex.net/repository/npm/@types/jasmine/-/jasmine-3.3.12.tgz#bf282cb540e9ad7a0a04b742082c073b655eab39"
@@ -298,6 +304,12 @@
   resolved "https://nexus.ooflex.net/repository/npm/@types/jasminewd2/-/jasminewd2-2.0.6.tgz#2f57a8d9875a6c9ef328a14bd070ba14a055ac39"
   dependencies:
     "@types/jasmine" "*"
+
+"@types/jquery@*", "@types/jquery@^3.3.29":
+  version "3.3.29"
+  resolved "https://nexus.ooflex.net/repository/npm/@types/jquery/-/jquery-3.3.29.tgz#680a2219ce3c9250483722fccf5570d1e2d08abd"
+  dependencies:
+    "@types/sizzle" "*"
 
 "@types/node@^6.0.46":
   version "6.14.4"
@@ -314,6 +326,10 @@
 "@types/selenium-webdriver@^2.53.35", "@types/selenium-webdriver@~2.53.39":
   version "2.53.43"
   resolved "https://nexus.ooflex.net/repository/npm/@types/selenium-webdriver/-/selenium-webdriver-2.53.43.tgz#2de3d718819bc20165754c4a59afb7e9833f6707"
+
+"@types/sizzle@*":
+  version "2.3.2"
+  resolved "https://nexus.ooflex.net/repository/npm/@types/sizzle/-/sizzle-2.3.2.tgz#a811b8c18e2babab7d542b3365887ae2e4d9de47"
 
 "@webassemblyjs/ast@1.4.3":
   version "1.4.3"
@@ -519,6 +535,10 @@ ajv@~6.4.0:
 amdefine@>=0.0.4:
   version "1.0.1"
   resolved "https://nexus.ooflex.net/repository/npm/amdefine/-/amdefine-1.0.1.tgz#4a5282ac164729e93619bcfd3ad151f817ce91f5"
+
+angular-datatables@6.0.0:
+  version "6.0.0"
+  resolved "https://nexus.ooflex.net/repository/npm/angular-datatables/-/angular-datatables-6.0.0.tgz#66f0c9f72192ac5f5f5a9f02e81ba4d900bfcc5c"
 
 ansi-colors@^3.0.0:
   version "3.2.4"
@@ -1580,6 +1600,26 @@ dashdash@^1.12.0:
   resolved "https://nexus.ooflex.net/repository/npm/dashdash/-/dashdash-1.14.1.tgz#853cfa0f7cbe2fed5de20326b8dd581035f6e2f0"
   dependencies:
     assert-plus "^1.0.0"
+
+datatables.net-bs4@^1.10.19:
+  version "1.10.19"
+  resolved "https://nexus.ooflex.net/repository/npm/datatables.net-bs4/-/datatables.net-bs4-1.10.19.tgz#0608dff22008cf3c7b8a68b1bc702ed255b404fb"
+  dependencies:
+    datatables.net "1.10.19"
+    jquery ">=1.7"
+
+datatables.net-dt@^1.10.19:
+  version "1.10.19"
+  resolved "https://nexus.ooflex.net/repository/npm/datatables.net-dt/-/datatables.net-dt-1.10.19.tgz#fc668e4942ac6e331be2707975d0f33e01afb60f"
+  dependencies:
+    datatables.net "1.10.19"
+    jquery ">=1.7"
+
+datatables.net@1.10.19:
+  version "1.10.19"
+  resolved "https://nexus.ooflex.net/repository/npm/datatables.net/-/datatables.net-1.10.19.tgz#97a1ed41c85e62d61040603481b59790a172dd1f"
+  dependencies:
+    jquery ">=1.7"
 
 date-now@^0.1.4:
   version "0.1.4"
@@ -3300,6 +3340,10 @@ jasmine@2.8.0:
 jasminewd2@^2.1.0:
   version "2.2.0"
   resolved "https://nexus.ooflex.net/repository/npm/jasminewd2/-/jasminewd2-2.2.0.tgz#e37cf0b17f199cce23bea71b2039395246b4ec4e"
+
+jquery@>=1.7, jquery@^3.3.1:
+  version "3.3.1"
+  resolved "https://nexus.ooflex.net/repository/npm/jquery/-/jquery-3.3.1.tgz#958ce29e81c9790f31be7792df5d4d95fc57fbca"
 
 js-base64@^2.1.8:
   version "2.5.1"
